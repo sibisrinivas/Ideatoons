@@ -1,0 +1,1 @@
+<?php define("DB_SERVER", "sql307.000a.biz"); define("DB_USER", "a000b_19705871"); define("DB_PASS", "sibi4044"); define("DB_NAME","a000b_19705871_database"); ?>
