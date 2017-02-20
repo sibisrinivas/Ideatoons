@@ -2501,27 +2501,27 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(0, 0, 0, 0.35) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(0, 0, 0, 0.35) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(0, 0, 0, 0.35) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(0, 0, 0, 0.35) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: rgba(0, 0, 0, 0.35) !important;
 		opacity: 1.0;
 	}
 
@@ -2549,10 +2549,12 @@
 		.icon.major {
 			width: 2.5em;
 			height: 2.5em;
-			display: block;
+			/*display: block;*/
 			background: #ffffff;      /* Icon background Color */ 
-			border-radius: 100%;
-			color: #312450;
+			display: inline-block;
+			border-radius: 60px;
+			box-shadow: 0px 0px 10px #73775c;
+			color: #4b5320;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2579,7 +2581,7 @@
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #ff9933  ;        /* Icon color */ 
+					color: #4b5320  ;        /* Icon color */ 
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3249,31 +3251,31 @@
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #4b5320;
 		}
 /*CODE FOR THE BACKGROUND COLOR */
 		.wrapper.style1 {
-			background-color: #4b5320 ; /* Welcome #0D331F #66666 #5e42a6 #808080  battle green- 4b5320*/
+			background-color: #ffffff ; /* Welcome #0D331F #66666 #5e42a6 #808080  battle green- 4b5320*/
 		}
 
 		.wrapper.style1-alt {
-			background-color: #4b5320 ; /* footer#493382   534220*/
+			background-color: #ffffff ; /* footer#493382   534220*/
 		}
 
 		.wrapper.style2 {
-			background-color: #4b5320; /* Tenant info #4b5320 #5052b5   325320*/ 
+			background-color: #ffffff; /* Tenant info #4b5320 #5052b5   325320*/ 
 		}
 
 		.wrapper.style2-alt {
-			background-color: #4b5320; /* Tenant info  #3e4094 ff3300 */
+			background-color: #ffffff; /* Tenant info  #3e4094 ff3300 */
 		}
 
 		.wrapper.style3 {
-			background-color: #4b5320 ; /* What we Offer 808080 #b74e91 534220 */
+			background-color: #ffffff ; /* What we Offer 808080 #b74e91 534220 */
 		}
 
 		.wrapper.style3-alt {
-			background-color: #4b5320; /* 953d75 */
+			background-color: #ffffff; /* 953d75 */
 		}
 
 		.wrapper.fullscreen {
@@ -3534,7 +3536,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #141414; /* sidebar background color  141414*/
+		background: #4b5320; /* sidebar background color  141414*/
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3752,7 +3754,7 @@
 			font-size: 0.6em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
-			line-height: 1.75;
+			line-height: 0.5; /*Side bar line size*/
 			outline: 0;
 			padding: 1.35em 0;
 			position: relative;
@@ -3771,14 +3773,14 @@
 			}
 
 			#sidebar nav a:before {
-				background: #ff9933 ;    /* Side Bar underline color */
+				background: #626642;    /* Side Bar underline color */
 			}
 
-			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+			#sidebar nav a:after {    /* Side Bar line color transition on hover 73775c */ 
+				background-image: -moz-linear-gradient(to right, #626642, #262816);
+				background-image: -webkit-linear-gradient(to right, #626642, #262816);
+				background-image: -ms-linear-gradient(to right, #626642, #262816);
+				background-image: linear-gradient(to right, #626642, #262816);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;

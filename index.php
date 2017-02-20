@@ -45,18 +45,186 @@
       }
 
     </style>
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<!--<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #909;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #909;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #909;
+}
+</style>-->
 	</head>
 
 	<body>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method = "post" action="verify.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username" name="username" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" name="password" required>
+        
+      <button type="submit">Login</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 
 		<!-- Sidebar -->
 
 			<section id="sidebar">
 
-				<div class="inner">
+					<img src="images/logo.png" style="width:270px;height:340px;">
+				<div class="relative">
 
 					<nav>
 
@@ -200,8 +368,7 @@
 
 						<section>
 
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-
+							
 							<div class="content">
 
 								<div class="inner">
@@ -224,8 +391,6 @@
 
 						<section>
 
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-
 							<div class="content">
 
 								<div class="inner">
@@ -245,31 +410,25 @@
 									
 
 									<p>Log in now to get started!.</p>
-
-									
-
-									
-
-							
-
-													
-
-					
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+		
+					<!--
 
                                                                      <form method = "post" action = "verify.php">
 
    <input type = "text" id = "username" placeholder = "Username" name = "username"><br>
 
    <input type = "password" id = "password" name = "password" placeholder = "***"><br>
-
-   <input type = "submit" id = "dologin" value = "Login">
+  <p align="right"> <font size="3"> <a href="">Forget password? </a></font></p>
+   <input type = "submit" id = "dologin" value = "Login"> &nbsp;
 
     <input type = "submit" id = "signup" value = "Sign up">                                                                          	
 
-     <br><a href="">Forget password? </a> 
+
 
 </form>
-
+-->
 								</div>
 
 							</div>
@@ -437,25 +596,6 @@
 
 										</li>
 
-										<li>
-
-											<h3>Social</h3>
-
-											<ul class="icons">
-
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-
-											</ul>
-
-										</li>
 
 									</ul>
 
@@ -481,7 +621,7 @@
 
 					<ul class="menu">
 
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Gayathri Building. All rights reserved.</li>
 
 					</ul>
 
