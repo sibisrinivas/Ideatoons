@@ -45,7 +45,41 @@
       }
 
     </style>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #909;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #909;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #909;
+}
+</style>
 	</head>
 
 	<body>
@@ -56,7 +90,8 @@
 
 			<section id="sidebar">
 
-				<div class="inner">
+					<img src="images/logo.png" style="width:270px;height:340px;">
+				<div class="relative">
 
 					<nav>
 
@@ -200,8 +235,7 @@
 
 						<section>
 
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-
+							
 							<div class="content">
 
 								<div class="inner">
@@ -224,8 +258,6 @@
 
 						<section>
 
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-
 							<div class="content">
 
 								<div class="inner">
@@ -246,14 +278,7 @@
 
 									<p>Log in now to get started!.</p>
 
-									
-
-									
-
-							
-
-													
-
+		
 					
 
                                                                      <form method = "post" action = "verify.php">
@@ -261,12 +286,12 @@
    <input type = "text" id = "username" placeholder = "Username" name = "username"><br>
 
    <input type = "password" id = "password" name = "password" placeholder = "***"><br>
-
-   <input type = "submit" id = "dologin" value = "Login">
+  <p align="right"> <font size="3"> <a href="">Forget password? </a></font></p>
+   <input type = "submit" id = "dologin" value = "Login"> &nbsp;
 
     <input type = "submit" id = "signup" value = "Sign up">                                                                          	
 
-     <br><a href="">Forget password? </a> 
+
 
 </form>
 
@@ -437,25 +462,6 @@
 
 										</li>
 
-										<li>
-
-											<h3>Social</h3>
-
-											<ul class="icons">
-
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-
-											</ul>
-
-										</li>
 
 									</ul>
 
@@ -481,7 +487,7 @@
 
 					<ul class="menu">
 
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Gayathri Building. All rights reserved.</li>
 
 					</ul>
 
