@@ -147,6 +147,7 @@ span.psw {
 }
 </style>
 <!--<style>
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -181,6 +182,7 @@ input[type=password], select {
    color:    #909;
 }
 </style>-->
+
 	</head>
 
 	<body>
@@ -410,10 +412,12 @@ window.onclick = function(event) {
 									
 
 									<p>Log in now to get started!.</p>
+
 <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
 		
 					<!--
+
 
                                                                      <form method = "post" action = "verify.php">
 
@@ -424,6 +428,7 @@ window.onclick = function(event) {
    <input type = "submit" id = "dologin" value = "Login"> &nbsp;
 
     <input type = "submit" id = "signup" value = "Sign up">                                                                          	
+
 
 
 
